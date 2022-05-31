@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -x
+
+curl -s localhost:3000 | jq .
+curl -s localhost:3001 | jq .
+curl -s -H 'Host: a.hello.world' localhost:3001 | jq .
+curl -s -H 'Host: b.hello.world' localhost:3001 | jq .
+curl -s -H 'Host: c.hello.world' localhost:3001 | jq .
+curl -s -H 'Host: d.hello.world' localhost:3001 | jq .

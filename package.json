@@ -1,0 +1,13 @@
+{
+  "name": "example-x-forwarded-x",
+  "version": "1.0.0",
+  "description": "Example for X-Forwarded-* HTTP Headers",
+  "author": "Hao Hong <honghao@foursquare.com>",
+  "license": "ISC",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

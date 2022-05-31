@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  lb:
+    image: nginx:1.22
+    command: nginx -c /nginx.conf
+    volumes:
+      - ./nginx.conf:/nginx.conf
+    ports:
+      - 3001:3001
+  app:
+    build: .
+    volumes:
+      - ./index.js:/app/index.js
+    ports:
+      - 3000:3000
